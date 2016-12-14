@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFC3340F1E01E0F600065902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC3340E1E01E0F600065902 /* AppDelegate.swift */; };
+		BFC334111E01E0F600065902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC334101E01E0F600065902 /* ViewController.swift */; };
+		BFC334141E01E0F600065902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC334121E01E0F600065902 /* Main.storyboard */; };
+		BFC334171E01E0F600065902 /* BadyShusher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFC334151E01E0F600065902 /* BadyShusher.xcdatamodeld */; };
+		BFC334191E01E0F600065902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC334181E01E0F600065902 /* Assets.xcassets */; };
+		BFC3341C1E01E0F600065902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC3341A1E01E0F600065902 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BFC3340B1E01E0F600065902 /* BadyShusher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadyShusher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC3340E1E01E0F600065902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFC334101E01E0F600065902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFC334131E01E0F600065902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFC334161E01E0F600065902 /* BadyShusher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BadyShusher.xcdatamodel; sourceTree = "<group>"; };
+		BFC334181E01E0F600065902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFC3341B1E01E0F600065902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFC3341D1E01E0F600065902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFC334081E01E0F500065902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFC334021E01E0F500065902 = {
+			isa = PBXGroup;
+			children = (
+				BFC3340D1E01E0F600065902 /* BadyShusher */,
+				BFC3340C1E01E0F600065902 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFC3340C1E01E0F600065902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFC3340B1E01E0F600065902 /* BadyShusher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFC3340D1E01E0F600065902 /* BadyShusher */ = {
+			isa = PBXGroup;
+			children = (
+				BFC3340E1E01E0F600065902 /* AppDelegate.swift */,
+				BFC334101E01E0F600065902 /* ViewController.swift */,
+				BFC334121E01E0F600065902 /* Main.storyboard */,
+				BFC334181E01E0F600065902 /* Assets.xcassets */,
+				BFC3341A1E01E0F600065902 /* LaunchScreen.storyboard */,
+				BFC3341D1E01E0F600065902 /* Info.plist */,
+				BFC334151E01E0F600065902 /* BadyShusher.xcdatamodeld */,
+			);
+			path = BadyShusher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFC3340A1E01E0F500065902 /* BadyShusher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC334201E01E0F600065902 /* Build configuration list for PBXNativeTarget "BadyShusher" */;
+			buildPhases = (
+				BFC334071E01E0F500065902 /* Sources */,
+				BFC334081E01E0F500065902 /* Frameworks */,
+				BFC334091E01E0F500065902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BadyShusher;
+			productName = BadyShusher;
+			productReference = BFC3340B1E01E0F600065902 /* BadyShusher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFC334031E01E0F500065902 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = mobiledeveloper;
+				TargetAttributes = {
+					BFC3340A1E01E0F500065902 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BFC334061E01E0F500065902 /* Build configuration list for PBXProject "BadyShusher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFC334021E01E0F500065902;
+			productRefGroup = BFC3340C1E01E0F600065902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFC3340A1E01E0F500065902 /* BadyShusher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFC334091E01E0F500065902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC3341C1E01E0F600065902 /* LaunchScreen.storyboard in Resources */,
+				BFC334191E01E0F600065902 /* Assets.xcassets in Resources */,
+				BFC334141E01E0F600065902 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFC334071E01E0F500065902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC334111E01E0F600065902 /* ViewController.swift in Sources */,
+				BFC334171E01E0F600065902 /* BadyShusher.xcdatamodeld in Sources */,
+				BFC3340F1E01E0F600065902 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFC334121E01E0F600065902 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC334131E01E0F600065902 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFC3341A1E01E0F600065902 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC3341B1E01E0F600065902 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFC3341E1E01E0F600065902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFC3341F1E01E0F600065902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFC334211E01E0F600065902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BadyShusher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiledeveloper.BadyShusher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BFC334221E01E0F600065902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BadyShusher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiledeveloper.BadyShusher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFC334061E01E0F500065902 /* Build configuration list for PBXProject "BadyShusher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC3341E1E01E0F600065902 /* Debug */,
+				BFC3341F1E01E0F600065902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC334201E01E0F600065902 /* Build configuration list for PBXNativeTarget "BadyShusher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC334211E01E0F600065902 /* Debug */,
+				BFC334221E01E0F600065902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFC334151E01E0F600065902 /* BadyShusher.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFC334161E01E0F600065902 /* BadyShusher.xcdatamodel */,
+			);
+			currentVersion = BFC334161E01E0F600065902 /* BadyShusher.xcdatamodel */;
+			path = BadyShusher.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BFC334031E01E0F500065902 /* Project object */;
+}
