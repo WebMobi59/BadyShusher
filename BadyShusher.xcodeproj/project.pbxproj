@@ -7,23 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFA0FF331E026623005ADF65 /* NewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0FF321E026623005ADF65 /* NewProductViewController.swift */; };
+		BFA0FF351E026977005ADF65 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0FF341E026977005ADF65 /* RecorderViewController.swift */; };
+		BFA0FF371E02720C005ADF65 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0FF361E02720C005ADF65 /* RecordListViewController.swift */; };
+		BFA0FF391E02769F005ADF65 /* RecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0FF381E02769F005ADF65 /* RecordDetailViewController.swift */; };
+		BFA0FF3B1E027CD5005ADF65 /* SoundEquilizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0FF3A1E027CD5005ADF65 /* SoundEquilizerViewController.swift */; };
 		BFC3340F1E01E0F600065902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC3340E1E01E0F600065902 /* AppDelegate.swift */; };
-		BFC334111E01E0F600065902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC334101E01E0F600065902 /* ViewController.swift */; };
+		BFC334111E01E0F600065902 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC334101E01E0F600065902 /* OptionViewController.swift */; };
 		BFC334141E01E0F600065902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC334121E01E0F600065902 /* Main.storyboard */; };
 		BFC334171E01E0F600065902 /* BadyShusher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFC334151E01E0F600065902 /* BadyShusher.xcdatamodeld */; };
 		BFC334191E01E0F600065902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC334181E01E0F600065902 /* Assets.xcassets */; };
 		BFC3341C1E01E0F600065902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC3341A1E01E0F600065902 /* LaunchScreen.storyboard */; };
+		BFC334261E01EC7A00065902 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC334251E01EC7A00065902 /* RootViewController.swift */; };
+		BFFF66531E02E94400F6FCB1 /* shush_v2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFF66521E02E94400F6FCB1 /* shush_v2.mp3 */; };
+		BFFF66591E03132300F6FCB1 /* SCListener.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFF66581E03132300F6FCB1 /* SCListener.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFA0FF321E026623005ADF65 /* NewProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewProductViewController.swift; sourceTree = "<group>"; };
+		BFA0FF341E026977005ADF65 /* RecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
+		BFA0FF361E02720C005ADF65 /* RecordListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
+		BFA0FF381E02769F005ADF65 /* RecordDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordDetailViewController.swift; sourceTree = "<group>"; };
+		BFA0FF3A1E027CD5005ADF65 /* SoundEquilizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundEquilizerViewController.swift; sourceTree = "<group>"; };
 		BFC3340B1E01E0F600065902 /* BadyShusher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadyShusher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC3340E1E01E0F600065902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFC334101E01E0F600065902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFC334101E01E0F600065902 /* OptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		BFC334131E01E0F600065902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFC334161E01E0F600065902 /* BadyShusher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BadyShusher.xcdatamodel; sourceTree = "<group>"; };
 		BFC334181E01E0F600065902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFC3341B1E01E0F600065902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFC3341D1E01E0F600065902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC334251E01EC7A00065902 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		BFFF66521E02E94400F6FCB1 /* shush_v2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shush_v2.mp3; sourceTree = "<group>"; };
+		BFFF66541E02E96200F6FCB1 /* babyshusher_comp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = babyshusher_comp.mp4; sourceTree = "<group>"; };
+		BFFF66561E03132200F6FCB1 /* BadyShusher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BadyShusher-Bridging-Header.h"; sourceTree = "<group>"; };
+		BFFF66571E03132300F6FCB1 /* SCListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCListener.h; sourceTree = "<group>"; };
+		BFFF66581E03132300F6FCB1 /* SCListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCListener.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +75,42 @@
 		BFC3340D1E01E0F600065902 /* BadyShusher */ = {
 			isa = PBXGroup;
 			children = (
+				BFFF66551E0312FA00F6FCB1 /* libs */,
+				BFFF66511E02E90800F6FCB1 /* media */,
 				BFC3340E1E01E0F600065902 /* AppDelegate.swift */,
-				BFC334101E01E0F600065902 /* ViewController.swift */,
+				BFC334101E01E0F600065902 /* OptionViewController.swift */,
 				BFC334121E01E0F600065902 /* Main.storyboard */,
 				BFC334181E01E0F600065902 /* Assets.xcassets */,
 				BFC3341A1E01E0F600065902 /* LaunchScreen.storyboard */,
 				BFC3341D1E01E0F600065902 /* Info.plist */,
 				BFC334151E01E0F600065902 /* BadyShusher.xcdatamodeld */,
+				BFC334251E01EC7A00065902 /* RootViewController.swift */,
+				BFA0FF321E026623005ADF65 /* NewProductViewController.swift */,
+				BFA0FF341E026977005ADF65 /* RecorderViewController.swift */,
+				BFA0FF361E02720C005ADF65 /* RecordListViewController.swift */,
+				BFA0FF381E02769F005ADF65 /* RecordDetailViewController.swift */,
+				BFA0FF3A1E027CD5005ADF65 /* SoundEquilizerViewController.swift */,
 			);
 			path = BadyShusher;
+			sourceTree = "<group>";
+		};
+		BFFF66511E02E90800F6FCB1 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				BFFF66521E02E94400F6FCB1 /* shush_v2.mp3 */,
+				BFFF66541E02E96200F6FCB1 /* babyshusher_comp.mp4 */,
+			);
+			name = media;
+			sourceTree = "<group>";
+		};
+		BFFF66551E0312FA00F6FCB1 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				BFFF66571E03132300F6FCB1 /* SCListener.h */,
+				BFFF66581E03132300F6FCB1 /* SCListener.m */,
+				BFFF66561E03132200F6FCB1 /* BadyShusher-Bridging-Header.h */,
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,7 +145,8 @@
 				TargetAttributes = {
 					BFC3340A1E01E0F500065902 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -126,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFF66531E02E94400F6FCB1 /* shush_v2.mp3 in Resources */,
 				BFC3341C1E01E0F600065902 /* LaunchScreen.storyboard in Resources */,
 				BFC334191E01E0F600065902 /* Assets.xcassets in Resources */,
 				BFC334141E01E0F600065902 /* Main.storyboard in Resources */,
@@ -139,8 +187,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC334111E01E0F600065902 /* ViewController.swift in Sources */,
+				BFA0FF391E02769F005ADF65 /* RecordDetailViewController.swift in Sources */,
+				BFC334111E01E0F600065902 /* OptionViewController.swift in Sources */,
+				BFA0FF371E02720C005ADF65 /* RecordListViewController.swift in Sources */,
+				BFFF66591E03132300F6FCB1 /* SCListener.m in Sources */,
+				BFA0FF3B1E027CD5005ADF65 /* SoundEquilizerViewController.swift in Sources */,
 				BFC334171E01E0F600065902 /* BadyShusher.xcdatamodeld in Sources */,
+				BFC334261E01EC7A00065902 /* RootViewController.swift in Sources */,
+				BFA0FF331E026623005ADF65 /* NewProductViewController.swift in Sources */,
+				BFA0FF351E026977005ADF65 /* RecorderViewController.swift in Sources */,
 				BFC3340F1E01E0F600065902 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,10 +319,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BadyShusher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiledeveloper.BadyShusher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BadyShusher/BadyShusher-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,10 +335,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BadyShusher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiledeveloper.BadyShusher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BadyShusher/BadyShusher-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -303,6 +365,7 @@
 				BFC334221E01E0F600065902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

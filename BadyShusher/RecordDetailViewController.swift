@@ -10,6 +10,11 @@ import UIKit
 
 class RecordDetailViewController: UIViewController {
 
+    @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var playBtn: UIButton!
+    @IBOutlet weak var deleteBtn: UIButton!
+    @IBOutlet weak var setasDefaultBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +25,13 @@ class RecordDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func backBtnPressed(_ sender: Any) {
     }
-    */
-
+    @IBAction func playBtnPressed(_ sender: Any) {
+    }
+    @IBAction func deleteBtnPressed(_ sender: Any) {
+    }
+    @IBAction func setasDefaultBtnPressed(_ sender: Any) {
+    }
 }
