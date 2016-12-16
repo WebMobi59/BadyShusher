@@ -234,6 +234,6 @@ class RootViewController: UIViewController {
         if let delegate = UIApplication.shared.delegate as? AppDelegate {
             delegate.comiunityVC = optionVC;
         }
-        self.navigationController?.present(optionVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(optionVC, animated: true)
     }
 }

@@ -21,6 +21,11 @@
 		BFC334261E01EC7A00065902 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC334251E01EC7A00065902 /* RootViewController.swift */; };
 		BFFF66531E02E94400F6FCB1 /* shush_v2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFF66521E02E94400F6FCB1 /* shush_v2.mp3 */; };
 		BFFF66591E03132300F6FCB1 /* SCListener.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFF66581E03132300F6FCB1 /* SCListener.m */; };
+		BFFF665B1E032EF000F6FCB1 /* QuickStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF665A1E032EF000F6FCB1 /* QuickStartViewController.swift */; };
+		BFFF665D1E0334FE00F6FCB1 /* FAQSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF665C1E0334FE00F6FCB1 /* FAQSViewController.swift */; };
+		BFFF66601E03418000F6FCB1 /* faq.docx in Resources */ = {isa = PBXBuildFile; fileRef = BFFF665E1E03418000F6FCB1 /* faq.docx */; };
+		BFFF66611E03418000F6FCB1 /* faq.htm in Resources */ = {isa = PBXBuildFile; fileRef = BFFF665F1E03418000F6FCB1 /* faq.htm */; };
+		BFFF66631E034B1100F6FCB1 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF66621E034B1000F6FCB1 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		BFFF66561E03132200F6FCB1 /* BadyShusher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BadyShusher-Bridging-Header.h"; sourceTree = "<group>"; };
 		BFFF66571E03132300F6FCB1 /* SCListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCListener.h; sourceTree = "<group>"; };
 		BFFF66581E03132300F6FCB1 /* SCListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCListener.m; sourceTree = "<group>"; };
+		BFFF665A1E032EF000F6FCB1 /* QuickStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickStartViewController.swift; sourceTree = "<group>"; };
+		BFFF665C1E0334FE00F6FCB1 /* FAQSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQSViewController.swift; sourceTree = "<group>"; };
+		BFFF665E1E03418000F6FCB1 /* faq.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = faq.docx; sourceTree = "<group>"; };
+		BFFF665F1E03418000F6FCB1 /* faq.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = faq.htm; sourceTree = "<group>"; };
+		BFFF66621E034B1000F6FCB1 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,9 @@
 				BFA0FF361E02720C005ADF65 /* RecordListViewController.swift */,
 				BFA0FF381E02769F005ADF65 /* RecordDetailViewController.swift */,
 				BFA0FF3A1E027CD5005ADF65 /* SoundEquilizerViewController.swift */,
+				BFFF665A1E032EF000F6FCB1 /* QuickStartViewController.swift */,
+				BFFF665C1E0334FE00F6FCB1 /* FAQSViewController.swift */,
+				BFFF66621E034B1000F6FCB1 /* TimerViewController.swift */,
 			);
 			path = BadyShusher;
 			sourceTree = "<group>";
@@ -97,6 +110,8 @@
 		BFFF66511E02E90800F6FCB1 /* media */ = {
 			isa = PBXGroup;
 			children = (
+				BFFF665E1E03418000F6FCB1 /* faq.docx */,
+				BFFF665F1E03418000F6FCB1 /* faq.htm */,
 				BFFF66521E02E94400F6FCB1 /* shush_v2.mp3 */,
 				BFFF66541E02E96200F6FCB1 /* babyshusher_comp.mp4 */,
 			);
@@ -173,8 +188,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFF66611E03418000F6FCB1 /* faq.htm in Resources */,
 				BFFF66531E02E94400F6FCB1 /* shush_v2.mp3 in Resources */,
 				BFC3341C1E01E0F600065902 /* LaunchScreen.storyboard in Resources */,
+				BFFF66601E03418000F6FCB1 /* faq.docx in Resources */,
 				BFC334191E01E0F600065902 /* Assets.xcassets in Resources */,
 				BFC334141E01E0F600065902 /* Main.storyboard in Resources */,
 			);
@@ -187,6 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFF665B1E032EF000F6FCB1 /* QuickStartViewController.swift in Sources */,
+				BFFF665D1E0334FE00F6FCB1 /* FAQSViewController.swift in Sources */,
 				BFA0FF391E02769F005ADF65 /* RecordDetailViewController.swift in Sources */,
 				BFC334111E01E0F600065902 /* OptionViewController.swift in Sources */,
 				BFA0FF371E02720C005ADF65 /* RecordListViewController.swift in Sources */,
@@ -195,6 +214,7 @@
 				BFC334171E01E0F600065902 /* BadyShusher.xcdatamodeld in Sources */,
 				BFC334261E01EC7A00065902 /* RootViewController.swift in Sources */,
 				BFA0FF331E026623005ADF65 /* NewProductViewController.swift in Sources */,
+				BFFF66631E034B1100F6FCB1 /* TimerViewController.swift in Sources */,
 				BFA0FF351E026977005ADF65 /* RecorderViewController.swift in Sources */,
 				BFC3340F1E01E0F600065902 /* AppDelegate.swift in Sources */,
 			);
