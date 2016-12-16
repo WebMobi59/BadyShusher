@@ -431,7 +431,7 @@
                                     <action selector="backBtnPressed:" destination="fDN-O3-5JV" eventType="touchUpInside" id="5gf-Jp-jla"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGW-4r-8i9">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VGW-4r-8i9">
                                 <rect key="frame" x="62" y="139.5" width="51" height="31"/>
                                 <connections>
                                     <action selector="soundToggleTapped:" destination="fDN-O3-5JV" eventType="valueChanged" id="rnG-0E-QKv"/>
@@ -799,7 +799,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5QR-bc-tV0" secondAttribute="height" id="1yx-rH-21X"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="recordStopBtn"/>
+                                <state key="normal" backgroundImage="recordBtn">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="recordStopBtnPressed:" destination="Efu-3S-pwA" eventType="touchUpInside" id="aYG-Fh-TS6"/>
                                 </connections>
@@ -858,8 +860,8 @@
         <image name="quickstart" width="120" height="120"/>
         <image name="quickstartBackground" width="320" height="480"/>
         <image name="rate" width="120" height="120"/>
+        <image name="recordBtn" width="47" height="47"/>
         <image name="recordDetailBackground" width="320" height="568"/>
-        <image name="recordStopBtn" width="47" height="47"/>
         <image name="recorderBackground" width="320" height="568"/>
         <image name="setAsDefault" width="145" height="43"/>
         <image name="share" width="120" height="120"/>

@@ -64,9 +64,9 @@ class RootViewController: UIViewController {
         soundLimits.removeAllObjects()
         isSoundPlay = true
         if valueOfUserDefaultAlreadyExist(key: "soundEqualizer") {
-            let soundEqualizer = UserDefaults.standard.value(forKey: "soundEqualizer") as! String
-            if soundEqualizer == "0" && volume == 0.0 {
-                playSoundTimer = Timer.scheduledTimer(timeInterval: 180, target: self, selector: #selector(stopPlayer), userInfo: nil, repeats: false)
+            let soundEqualizer = UserDefaults.standard.bool(forKey: "soundEqualizer")
+            if soundEqualizer == false && volume != 0.0 {
+                playSoundTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(stopPlayer), userInfo: nil, repeats: false)
             }
             
         }
@@ -134,6 +134,8 @@ class RootViewController: UIViewController {
         }
         
         let url = URL(fileURLWithPath: "/dev/null")
+        
+        print("Record Path \(url.relativePath)")
         
         let recordSettings = [AVFormatIDKey:kAudioFormatAppleIMA4,
                               AVSampleRateKey:44100.0,

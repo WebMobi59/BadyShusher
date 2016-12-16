@@ -15,7 +15,14 @@ class SoundEquilizerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if (valueOfUserDefaultAlreadyExist(key: "soundEqualizer")) {
+            let on = UserDefaults.standard.bool(forKey: "soundEqualizer")
+            soundToggle.setOn(on, animated: true)
+        }
+    }
+    
+    func valueOfUserDefaultAlreadyExist(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +31,10 @@ class SoundEquilizerViewController: UIViewController {
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
+        UserDefaults.standard.set(self.soundToggle.isOn, forKey: "soundEqualizer")
+        UserDefaults.standard.synchronize()
+        
+        _ = self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func soundToggleTapped(_ sender: Any) {
