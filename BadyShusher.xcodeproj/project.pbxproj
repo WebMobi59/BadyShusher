@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1DE91D1E06E28A00A0E1F2 /* babyshusher_comp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BFFF66541E02E96200F6FCB1 /* babyshusher_comp.mp4 */; };
+		BF66F56C1E0473CD00EADB97 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66F56B1E0473CD00EADB97 /* RecordTableViewCell.swift */; };
 		BFA0FF331E026623005ADF65 /* NewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0FF321E026623005ADF65 /* NewProductViewController.swift */; };
 		BFA0FF351E026977005ADF65 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0FF341E026977005ADF65 /* RecorderViewController.swift */; };
 		BFA0FF371E02720C005ADF65 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0FF361E02720C005ADF65 /* RecordListViewController.swift */; };
@@ -29,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF66F56B1E0473CD00EADB97 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		BFA0FF321E026623005ADF65 /* NewProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewProductViewController.swift; sourceTree = "<group>"; };
 		BFA0FF341E026977005ADF65 /* RecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
 		BFA0FF361E02720C005ADF65 /* RecordListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 				BFFF665A1E032EF000F6FCB1 /* QuickStartViewController.swift */,
 				BFFF665C1E0334FE00F6FCB1 /* FAQSViewController.swift */,
 				BFFF66621E034B1000F6FCB1 /* TimerViewController.swift */,
+				BF66F56B1E0473CD00EADB97 /* RecordTableViewCell.swift */,
 			);
 			path = BadyShusher;
 			sourceTree = "<group>";
@@ -188,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1DE91D1E06E28A00A0E1F2 /* babyshusher_comp.mp4 in Resources */,
 				BFFF66611E03418000F6FCB1 /* faq.htm in Resources */,
 				BFFF66531E02E94400F6FCB1 /* shush_v2.mp3 in Resources */,
 				BFC3341C1E01E0F600065902 /* LaunchScreen.storyboard in Resources */,
@@ -206,6 +211,7 @@
 			files = (
 				BFFF665B1E032EF000F6FCB1 /* QuickStartViewController.swift in Sources */,
 				BFFF665D1E0334FE00F6FCB1 /* FAQSViewController.swift in Sources */,
+				BF66F56C1E0473CD00EADB97 /* RecordTableViewCell.swift in Sources */,
 				BFA0FF391E02769F005ADF65 /* RecordDetailViewController.swift in Sources */,
 				BFC334111E01E0F600065902 /* OptionViewController.swift in Sources */,
 				BFA0FF371E02720C005ADF65 /* RecordListViewController.swift in Sources */,

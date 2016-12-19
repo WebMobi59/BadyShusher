@@ -36,7 +36,7 @@ class RootViewController: UIViewController {
         
             if selectedSoundName != "Application Default Sound" {
                 var documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-                documentsPath = documentsPath + "/" + selectedSoundName
+                documentsPath = documentsPath + "/" + selectedSoundName + ".caf"
                 audioFileURL = URL(fileURLWithPath: documentsPath)
             }
         }
@@ -68,7 +68,6 @@ class RootViewController: UIViewController {
             if soundEqualizer == false && volume != 0.0 {
                 playSoundTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(stopPlayer), userInfo: nil, repeats: false)
             }
-            
         }
         
         let session = AVAudioSession.sharedInstance()
@@ -88,7 +87,7 @@ class RootViewController: UIViewController {
             
             if selectedSoundName != "Application Default Sound" {
                 var documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-                documentsPath = documentsPath + "/" + selectedSoundName
+                documentsPath = documentsPath + "/" + selectedSoundName + ".caf"
                 audioFileURL = URL(fileURLWithPath: documentsPath)
             }
         }

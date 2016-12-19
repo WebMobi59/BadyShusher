@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
+import MessageUI
 
-class OptionViewController: UIViewController {
+class OptionViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
     @IBOutlet weak var quickStartBtn: UIButton!
     @IBOutlet weak var FAQsBtn: UIButton!
@@ -21,6 +24,8 @@ class OptionViewController: UIViewController {
     @IBOutlet weak var rateBtn: UIButton!
     @IBOutlet weak var websiteBtn: UIButton!
     @IBOutlet weak var appBtn: UIButton!
+    
+    let App_ID = 419606496
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,18 +63,73 @@ class OptionViewController: UIViewController {
     }
     
     @IBAction func videoBtnPressed(_ sender: Any) {
-//        let videoVC = self.storyboard?.instantiateViewController(withIdentifier: "videoVC") as! VideoViewController
-//        self.navigationController?.present(videoVC, animated: true, completion: nil)
+        guard let path = Bundle.main.path(forResource: "babyshusher_comp", ofType:"mp4") else {
+            debugPrint("babyshusher_comp.mp4 not found")
+            return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true) {
+            player.play()
+        }
     }
     
     @IBAction func shareBtnPressed(_ sender: Any) {
-    }
-    
-    @IBAction func feedbackBtnPressed(_ sender: Any) {
         
     }
     
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+        
+        mailComposerVC.setToRecipients(["Feedback@BabyShusher.com"])
+        mailComposerVC.setSubject("Feedback for Baby Shusher")
+        
+        return mailComposerVC
+    }
+    
+    func showSendMailErrorAlert() {
+        let alertVC = UIAlertController(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertVC.addAction(okAction)
+        self.present(alertVC, animated: true, completion: nil)
+    }
+    
+    // MARK: MFMailComposeViewControllerDelegate Method
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func feedbackBtnPressed(_ sender: Any) {
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            self.showSendMailErrorAlert()
+        }
+    }
+    
     @IBAction func rateBtnPressed(_ sender: Any) {
+        let alertVC = UIAlertController(title: "Rate Baby Shusher", message: "If you enjoy using Baby Shusher, would you mind taking a moment to rate it? It won't take more than a minute. Thanks for your support!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Rate Baby Shusher", style: .default, handler: {
+            (action : UIAlertAction!) -> Void in
+            
+            let reviewURL = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=" + String(self.App_ID)
+            let url = URL(string: reviewURL)!
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        })
+        let cancelAction = UIAlertAction(title: "No, Thanks", style: .default, handler: nil)
+        let reminderAction = UIAlertAction(title: "Remind me later", style: .default, handler: nil)
+        alertVC.addAction(okAction)
+        alertVC.addAction(cancelAction)
+        alertVC.addAction(reminderAction)
+        self.present(alertVC, animated: true, completion: nil)
+
     }
     
     @IBAction func websiteBtnPressed(_ sender: Any) {
