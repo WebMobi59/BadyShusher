@@ -176,26 +176,26 @@ class RootViewController: UIViewController {
         var micLevel : Double = 0.0
         
         if valueOfUserDefaultAlreadyExist(key: "voiceDepth") {
-            let voiceDepth = UserDefaults.standard.value(forKey: "voiceDepth") as! String
+            let voiceDepth = UserDefaults.standard.object(forKey: "voiceDepth") as! Int
             switch voiceDepth {
-            case "0":
+            case 0:
                 micLevel = 0.002351
                 break
-            case "1":
+            case 1:
                 micLevel = 0.01000
                 break
-            case "2":
+            case 2:
                 micLevel = 0.9900
                 break
-            case "3":
+            case 3:
                 micLevel = 0.07
                 break
             default:
                 break
             }
+        } else {
+            micLevel = 0.002351
         }
-        
-        micLevel = 0.002351
         var count : Int = 0
         
         for item in soundLimits {

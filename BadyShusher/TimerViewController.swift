@@ -29,7 +29,7 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         pickerUIView.layer.cornerRadius = 5.0
         
         if (valueOfUserDefaultAlreadyExist(key: "playTime")) {
-            timeValue = Int(UserDefaults.standard.value(forKey: "playTime") as! String)!
+            timeValue = UserDefaults.standard.object(forKey: "playTime") as! Int
         }
         
         hourLabel.text = hoursList[timeValue] as? String
@@ -46,7 +46,7 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
 
     @IBAction func backBtnPressed(_ sender: Any) {
-        UserDefaults.standard.set(String(timeValue), forKey: "playTime")
+        UserDefaults.standard.set(timeValue, forKey: "playTime")
         UserDefaults.standard.synchronize()
         _ = self.navigationController?.popViewController(animated: true)
     }

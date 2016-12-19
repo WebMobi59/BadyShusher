@@ -18,6 +18,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if (valueOfUserDefaultAlreadyExist(key: "soundEqualizer") == false) {
+            UserDefaults.standard.set(3, forKey: "playTime")
+            UserDefaults.standard.set(1, forKey: "voiceDepth")
+            UserDefaults.standard.setValue(1, forKey: "playBackVolume")
+            UserDefaults.standard.setValue(1, forKey: "runTime")
+            UserDefaults.standard.setValue(0, forKey: "reactive")
+            UserDefaults.standard.setValue(0, forKey: "soundEqualizer")
+            UserDefaults.standard.setValue("yes", forKey: "firstOpen")
+            UserDefaults.standard.synchronize()
+            
+        }
+        
+        if (valueOfUserDefaultAlreadyExist(key:"selectedSound") == false) {
+            let tmp : NSArray = []
+            UserDefaults.standard.setValue(tmp, forKey: "sounds")
+            UserDefaults.standard.setValue("Application Default Sound", forKey: "selectedSound")
+            UserDefaults.standard.synchronize()
+        }
         return true
     }
 
@@ -88,6 +107,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    func valueOfUserDefaultAlreadyExist(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
     }
 
 }

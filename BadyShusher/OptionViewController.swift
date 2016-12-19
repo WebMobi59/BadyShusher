@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import AVKit
 import MessageUI
+import Social
 
 class OptionViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
@@ -75,8 +76,75 @@ class OptionViewController: UIViewController, MFMailComposeViewControllerDelegat
         }
     }
     
-    @IBAction func shareBtnPressed(_ sender: Any) {
+    func sendMail() {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
+        mailComposerVC.setSubject("Check out this cool Baby App")
+        mailComposerVC.setMessageBody("Hey, I thought you'd be interested in the Baby Shusher App. It is truly a Sleep Miracle for babies and has a lot of cool features, like a Timer Option, a Sound Equalizer, and the option to Custom Record your own Shush. <br/><br/>Check out how it works at www.BabyShusher.com<br/> and go get it right now.", isHTML: true)
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposerVC, animated: true, completion: nil)
+        } else {
+            self.showSendMailErrorAlert()
+        }
+    }
+    
+    func shareTwitter() {
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
+            
+            let tweetShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            
+            
+            self.present(tweetShare, animated: true, completion: nil)
+            
+        } else {
+            
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Twitter account to tweet.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func shareFacebook() {
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook) {
+            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            self.present(fbShare, animated: true, completion: nil)
+            
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func shareBtnPressed(_ sender: Any) {
+        let alertVC = UIAlertController(title: "Share Baby Shusher via :", message: "", preferredStyle: .actionSheet)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let fbAction = UIAlertAction(title: "Facebook", style: .destructive, handler: {
+            (action : UIAlertAction!) -> Void in
+            self.shareFacebook()
+        })
+        
+        let emailAction = UIAlertAction(title: "Email", style: .default, handler: {
+            (action : UIAlertAction!) -> Void in
+            self.sendMail()
+        })
+        
+        let twitterAction = UIAlertAction(title: "Twitter", style: .destructive, handler: {
+            (action : UIAlertAction!) -> Void in
+            self.shareTwitter()
+            
+        })
+        
+        alertVC.addAction(emailAction)
+        alertVC.addAction(fbAction)
+        alertVC.addAction(twitterAction)
+        alertVC.addAction(cancelAction)
+        self.present(alertVC, animated: true, completion: nil)
     }
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
